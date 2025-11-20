@@ -50,7 +50,7 @@ func main() {
 		} else if ageNumber >= 5 && ageNumber <= 12 {
 			fmt.Printf("Student %s is a child. \n", name)
 		} else {
-		fmt.Printf("%s is in a different life stage. \n", name)
+			fmt.Printf("%s is in a different life stage. \n", name)
 		}
 	} else if strings.ToLower(student) == "no" {
 		if ageNumber >= 20 && ageNumber <= 30 {
