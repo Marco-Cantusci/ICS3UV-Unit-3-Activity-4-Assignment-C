@@ -44,21 +44,21 @@ func main() {
 	student = strings.TrimSpace(student)
 
 	// processing
-if strings.ToLower(student) == "yes" {
-	if ageNumber >= 13 && ageNumber <= 19 {
-		fmt.Printf("Student %s is a teenager. \n", name)
-	} else if ageNumber >= 5 && ageNumber <= 12 {
-		fmt.Printf("Student %s is a child. \n", name)
-	} else {
+	if strings.ToLower(student) == "yes" {
+		if ageNumber >= 13 && ageNumber <= 19 {
+			fmt.Printf("Student %s is a teenager. \n", name)
+		} else if ageNumber >= 5 && ageNumber <= 12 {
+			fmt.Printf("Student %s is a child. \n", name)
+		} else {
 		fmt.Printf("%s is in a different life stage. \n", name)
+		}
+	} else if strings.ToLower(student) == "no" {
+		if ageNumber >= 20 && ageNumber <= 30 {
+			fmt.Printf("%s is a young adult. \n", name)
+		} else {
+			fmt.Printf("%s is in a different life stage. \n", name)
+		}
 	}
-} else if strings.ToLower(student) == "no" {
-	if ageNumber >= 20 && ageNumber <= 30 {
-		fmt.Printf("%s is a young adult. \n", name)
-	} else {
-	fmt.Printf("%s is in a different life stage. \n", name)
-	}
-}
 
-fmt.Println("\nDone.")
+	fmt.Println("\nDone.")
 }

@@ -31,4 +31,4 @@ if (STUDENT.toLowerCase() == "yes") {
   }
 }
 
-console.log("\nDone.")
+console.log("\nDone.");
